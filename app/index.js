@@ -13,13 +13,32 @@ var ProfilePic = React.createClass({
 	}
 });
 
+// whatever the component wraps will become {this.props.children}
+// in this case the <Link> component nested in Profile Link wraps {this.props.username}
+// we can call this.changeURL in render as it is a function defined within the Link component
+var Link = React.createClass({
+	changeURL: function () {
+		window.location.replace(this.props.href)
+	},
+	render: function () {
+		console.log(this.props.children);
+		return (
+			<span 
+				style={{color: 'blue', cursor: 'pointer'}}
+				onClick={this.changeURL}>
+				{this.props.children}
+			</span>
+		)
+	}
+})
+
 var ProfileLink = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<a href={'https://www.github.com/' + this.props.username}>
+				<Link href={'https://www.github.com/' + this.props.username}>
 					{this.props.username}
-				</a>
+				</Link>
 			</div>
 		)
 	}
