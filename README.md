@@ -1,6 +1,7 @@
 # Let's React
 
 To get a React **Hello World App** up and running at `http://localhost:8080/`
+
 1. Clone this repo and `cd letsreact` 
 2. To install the required dependencies, Download node - https://nodejs.org/en/ and  run ` sudo npm install`
 3. Check that the root directory now has a node_modules directory. This should contain a react folder, a react-dom folder and all the corresponding dependacies
