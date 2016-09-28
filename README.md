@@ -1,10 +1,11 @@
 # Let's React
 
-1. To get a React **Hello World App** up and running at `http://localhost:8080/`, first clone this repo
-2. To install the required dependencies run `npm install`
+To get a React **Hello World App** up and running at `http://localhost:8080/`
+1. Clone this repo and `cd letsreact` 
+2. To install the required dependencies, Download node - https://nodejs.org/en/ and  run ` sudo npm install`
 3. Check that the root directory now has a node_modules directory. This should contain a react folder, a react-dom folder and all the corresponding dependacies
-4. Run 'npm run production' in the command line and check that a *dist* folder gets created. This should contain an index.html file and a index_bundle.js file.
-5. Rack up locally by running `npm run start` in the command line. You should see **Hello Friend** at `http://localhost:8080/` 💥
+4. Run `npm run production` in the command line and check that a *dist* folder gets created. This should contain an index.html file and a index_bundle.js file.
+5. Rack up locally by running `npm run start` in the command line. You should see **HelloWORLD** at `http://localhost:8080/` 💥
 
 
 ## OR 
